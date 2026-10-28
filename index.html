@@ -4,47 +4,123 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Shrink Run – Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the Shrink Run iOS game.">
+<link rel="icon" href="icon.png">
 <style>
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1b2145}
-  h1{font-size:28px} h2{font-size:20px;margin-top:32px}
-  @media (prefers-color-scheme:dark){body{background:#181b3a;color:#eef}a{color:#8fd3ff}}
+  :root{
+    --bg:#f4f6fb; --card:#ffffff; --text:#1b2145; --dim:#5b6285; --line:#e3e7f2;
+    --accent:#ff7a59; --accent2:#4d5bd6; --hero1:#1e2250; --hero2:#3a3f86;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#0f1128; --card:#181b3a; --text:#eef0ff; --dim:#a4abd2; --line:#2a2f6a}
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  a{color:var(--accent2);text-decoration:none} a:hover{text-decoration:underline}
+  @media (prefers-color-scheme:dark){a{color:#9fb0ff}}
+  .hero{background:linear-gradient(180deg,var(--hero1),var(--hero2));color:#fff;padding:56px 20px 72px;text-align:center}
+  .hero img{width:96px;height:96px;border-radius:22px;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+  .hero h1{margin:20px 0 6px;font-size:34px;letter-spacing:-.02em}
+  .hero p{margin:0;color:#c9ceff}
+  .wrap{max-width:760px;margin:-40px auto 60px;padding:0 16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px 28px;margin-bottom:18px;
+    box-shadow:0 6px 24px rgba(20,25,70,.06)}
+  .card h2{margin:0 0 10px;font-size:20px;letter-spacing:-.01em}
+  .card p{margin:0 0 12px} .card p:last-child{margin-bottom:0}
+  .lead{font-size:17px}
+  table{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+  th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+  tr:last-child td{border-bottom:0}
+  .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600;
+    background:rgba(77,91,214,.12);color:var(--accent2)}
+  @media (prefers-color-scheme:dark){.pill{background:rgba(159,176,255,.14);color:#9fb0ff}}
+  .toc{display:flex;flex-wrap:wrap;gap:8px}
+  .toc a{border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:14px;color:var(--text)}
+  .toc a:hover{border-color:var(--accent2);text-decoration:none}
+  footer{text-align:center;color:var(--dim);font-size:14px;padding:0 16px 40px}
+  @media (max-width:560px){.card{padding:22px 18px}.hero h1{font-size:28px}}
 </style>
 </head>
 <body>
-<h1>Shrink Run – Privacy Policy</h1>
-<p><em>Last updated: October 28, 2026</em></p>
 
-<p>This policy explains what information the game <strong>Shrink Run</strong> ("the app") uses. We do not require an account, and we do not ask for your name, email address, or location.</p>
+<header class="hero">
+  <img src="icon.png" alt="Shrink Run app icon">
+  <h1>Privacy Policy</h1>
+  <p>Shrink Run for iPhone and iPad &middot; Last updated October 28, 2026</p>
+</header>
 
-<h2>Information stored on your device</h2>
-<p>The app saves your progress (best score, coins, gems, unlocked skins and worlds, settings, and purchase status) on your device.</p>
+<main class="wrap">
 
-<h2>iCloud</h2>
-<p>If you are signed in to iCloud, your progress is synced between your own devices using Apple's iCloud key-value storage. This data is handled by Apple and is not accessible to us.</p>
+  <section class="card">
+    <p class="lead">Shrink Run is a game you can play without an account. We don't ask for your name, email address, or location, and we don't run our own analytics or tracking. This page explains the limited data that is used when you play.</p>
+    <div class="toc">
+      <a href="#glance">At a glance</a>
+      <a href="#storage">Your progress</a>
+      <a href="#apple">Apple services</a>
+      <a href="#ads">Advertising</a>
+      <a href="#choices">Your choices</a>
+      <a href="#children">Children</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </section>
 
-<h2>Game Center</h2>
-<p>If you are signed in to Game Center, the app submits your best score and achievements to Apple's Game Center. This is handled by Apple under Apple's privacy policy.</p>
+  <section class="card" id="glance">
+    <h2>Data at a glance</h2>
+    <table>
+      <tr><th>Service</th><th>What it does</th><th>Handled by</th></tr>
+      <tr><td>Game progress</td><td>Score, coins, gems, skins, settings</td><td><span class="pill">Your device</span></td></tr>
+      <tr><td>iCloud sync</td><td>Keeps progress in sync on your own devices</td><td><span class="pill">Apple</span></td></tr>
+      <tr><td>Game Center</td><td>Leaderboard and achievements</td><td><span class="pill">Apple</span></td></tr>
+      <tr><td>In-app purchases</td><td>Payments and purchase restore</td><td><span class="pill">Apple</span></td></tr>
+      <tr><td>Ads</td><td>Ads shown between rounds</td><td><span class="pill">Google AdMob</span></td></tr>
+    </table>
+  </section>
 
-<h2>In-app purchases</h2>
-<p>Purchases are processed entirely by Apple. We do not receive or store your payment details.</p>
+  <section class="card" id="storage">
+    <h2>Your progress</h2>
+    <p>The game saves your best score, coins, gems, unlocked skins and worlds, settings, and purchase status on your device. This information stays on your device until you delete the app.</p>
+  </section>
 
-<h2>Advertising</h2>
-<p>The app shows ads provided by Google AdMob. AdMob may collect and use device information such as your device's advertising identifier, IP address, and ad interaction and usage data, to serve and measure ads and to prevent fraud. In regions where required (such as the European Economic Area and the UK), you will be asked for consent before personalized ads are shown, and you can change your choice at any time in the app or your device settings. You can also limit ad personalization in your device's iOS settings. Learn more in <a href="https://policies.google.com/technologies/partner-sites">Google's explanation of how it uses data from apps that use its services</a>.</p>
-<p>Ads are shown only between game rounds, never during gameplay. Purchasing "Remove Ads" or the Starter Pack removes interstitial ads.</p>
+  <section class="card" id="apple">
+    <h2>Apple services</h2>
+    <p><strong>iCloud.</strong> If you are signed in to iCloud, your progress is synced between your own devices using Apple's iCloud key-value storage. This data is handled by Apple and is not accessible to us.</p>
+    <p><strong>Game Center.</strong> If you are signed in to Game Center, the game submits your best score and achievements to Apple. This is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+    <p><strong>In-app purchases.</strong> Purchases are processed entirely by Apple. We never receive or store your payment details.</p>
+  </section>
 
-<h2>What we do not do</h2>
-<p>We do not sell your personal information, and we do not run our own analytics or tracking.</p>
+  <section class="card" id="ads">
+    <h2>Advertising</h2>
+    <p>Shrink Run shows ads provided by Google AdMob. To serve and measure ads and to prevent fraud, AdMob may collect and use information such as your device's advertising identifier, IP address, and ad interaction and usage data. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>.</p>
+    <p>Ads appear only between rounds, never during gameplay. Purchasing <em>Remove Ads</em> or the <em>Starter Pack</em> removes these ads.</p>
+    <p>In regions where required, such as the European Economic Area and the United Kingdom, you are asked for your consent before ads that use your data are shown.</p>
+  </section>
 
-<h2>Children</h2>
-<p>The app is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+  <section class="card" id="choices">
+    <h2>Your choices</h2>
+    <p>You can limit ad personalization in your device's iOS settings, and you can change any consent choice you made in the game when it is offered. iCloud and Game Center data can be managed or deleted in your Apple account settings. We do not sell your personal information.</p>
+  </section>
 
-<h2>Data retention and deletion</h2>
-<p>Game progress stays on your device until you delete the app. iCloud and Game Center data can be managed or deleted in your Apple account settings.</p>
+  <section class="card" id="children">
+    <h2>Children</h2>
+    <p>Shrink Run is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+  </section>
 
-<h2>Changes to this policy</h2>
-<p>We may update this policy from time to time. The latest version will always be available at this address.</p>
+  <section class="card">
+    <h2>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The latest version is always available at this address, with the date shown at the top of the page.</p>
+  </section>
 
-<h2>Contact</h2>
-<p>Questions? Email: <a href="mailto:davitisamakashvili@gmail.com">davitisamakashvili@gmail.com</a></p>
+  <section class="card" id="contact">
+    <h2>Contact</h2>
+    <p>Questions about privacy? Email <a href="mailto:davitisamakashvili@gmail.com">davitisamakashvili@gmail.com</a>.</p>
+  </section>
+
+</main>
+
+<footer>&copy; 2026 Shrink Run</footer>
 </body>
 </html>
